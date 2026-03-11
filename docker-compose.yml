@@ -1,0 +1,16 @@
+services:
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "3001:3000"
+
+  product-service:
+    image: nginx
+    ports:
+      - "3002:80"
+
+  order-service:
+    image: nginx
+    ports:
+      - "3003:80"
