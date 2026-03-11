@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 4000:3000 user-service'
+                sh 'docker run -d -p 3005:3000 user-service'
             }
         }
 
